@@ -18,7 +18,10 @@ ui <- fluidPage(
       tags$h1(textOutput("pred.price"),style="color:dodgerblue"),
       br(),
       tags$h4("Expected Range:", style="color:gray"),
-      tags$h1(textOutput("intervalx"),"~",textOutput("intervaly"),style="color:gray")
+      tags$h1(textOutput("intervalx"),"~",textOutput("intervaly"),style="color:gray"),
+      br(),
+      tags$h4("Documentation", style="color:gray"),
+      helpText(a("Click for the User Guide", href="https://docs.google.com/document/d/1nCBWieFva6fKpLgFUYwWo59sxWG6ZTrGAJ44MW2SDuw/edit"))
       #output$pred.price <- renderText()
     )
   )
